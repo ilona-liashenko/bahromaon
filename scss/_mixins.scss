@@ -1,0 +1,10 @@
+@mixin bgImageStyle {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin fontStyle ($fontSize, $fontWeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}

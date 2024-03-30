@@ -1,0 +1,82 @@
+@media screen and (max-width: 1200px) {
+    .center-content {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .section-title {
+        @include fontStyle(30px, 400);
+    }
+    .choose-us {
+        padding: 135px 0 72px;
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__description {
+            margin-bottom: 20px;
+        }
+        &__img {
+            &--top {
+                right: 80px;
+            }
+            &--bottom {
+                right: 55px;
+            }
+        }
+    }
+    .how-works {
+        padding: 65px 0;
+        &__arcs {
+            display: none;
+        }
+    }
+    .spain {
+        &__content {
+            &--top {
+                top: 200px;
+                left: calc(50% - 420px);
+            }
+            &--bottom {
+                bottom: 80px;
+                right: calc(50% - 420px);
+            }
+        }
+    }
+    .testimonials {
+        padding: 100px 0 90px;
+        &__title {
+            margin-bottom: 55px;
+        }
+    }
+    .footer {
+        padding: 85px 0 40px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .banner {
+        padding: 200px 0 100px;
+    }
+    .menu {
+        display: none;
+    }
+    .choose-us {
+        padding: 75px 0 50px;
+        // &__description {
+        //     width: 100%;
+        // }
+        &__button {
+            margin-top: 30px;
+        }
+        &__img {
+            width: 250px;
+            &--top {
+                top: -15px;
+            }
+            &--bottom {
+                bottom: 20px;
+                right: 55px;
+            }
+        }
+    }
+    
+}
