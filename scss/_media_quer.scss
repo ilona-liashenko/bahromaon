@@ -78,5 +78,77 @@
             }
         }
     }
+    .burger {
+        width: 30px;
+        height: 22px;
+        position: relative;
+        display: block;
+        cursor: pointer;
+        &__icon {
+            width: 100%;
+            height: 2px;
+            background-color: $mainColor;
+            display: inline-block;
+            &::before,
+            &::after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: $mainColor;
+                left: 0;
+                right: 0;
+                transition-duration: 0.4s;
+            }
+            &::before {
+                top: 0;
+            }
+            &::after {
+                bottom: 0;
+            }
+        }
+    }
+    .burger-checkbox:checked ~ .menu {
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: 0.4s;
+        top: 83px;
+        background-color: $secondaryColor;
+        display: block;
+        height: 300px;
+    }
+    .menu {
+        &__item {
+            width: 100%;
+            flex-direction: column;
+        }
+        &__link {
+            font-size: 23px;
+            line-height: 40px;
+        }
+        &__list {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid #beb8b8;
+        }
+    }
+    .burger-checkbox:checked ~ .burger {
+        .burger__icon {
+            background: transparent;
+            &:before {
+                top: 50%;
+                transform: rotateZ(45deg);
+                background-color: $mainColor;
+            }
+            &:after {
+                top: 50%;
+                transform: rotateZ(-45deg);
+                background-color: $mainColor;
+            }
+        }
+    }
     
 }
