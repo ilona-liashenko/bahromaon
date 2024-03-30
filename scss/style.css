@@ -124,6 +124,10 @@ body {
 .menu__list:last-child {
   margin-right: 0;
 }
+.menu__list:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
 .menu__link {
   font-family: "Aleo", serif;
   font-size: 14px;
@@ -141,7 +145,7 @@ body {
 .banner {
   position: relative;
   padding: 264px 0 144px;
-  background-image: url(/img/banner/Banner-bg.jpg);
+  background-image: url(../img/banner/Banner-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -235,7 +239,7 @@ body {
 .choose-us {
   width: 100%;
   padding: 212px 0 131px;
-  background-image: url(/img/choose-us/choose-us-bg.jpg);
+  background-image: url(../img/choose-us/choose-us-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -294,7 +298,6 @@ body {
 }
 .how-works__arcs {
   position: absolute;
-  width: 100%;
   top: -60px;
   z-index: -1;
   left: calc(50% - 390px);
@@ -310,10 +313,10 @@ body {
   background-repeat: no-repeat;
 }
 .spain__wrapper--top {
-  background-image: url(/img/spain/section-top-bg.jpg);
+  background-image: url(../img/spain/section-top-bg.jpg);
 }
 .spain__wrapper--bottom {
-  background-image: url(/img/spain/section-bottom-bg.jpg);
+  background-image: url(../img/spain/section-bottom-bg.jpg);
 }
 .spain__content {
   position: absolute;
@@ -355,7 +358,7 @@ body {
 }
 
 .testimonials {
-  background-image: url(/img/testimonials/testimonials-bg.jpg);
+  background-image: url(../img/testimonials/testimonials-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -417,6 +420,7 @@ body {
 
 .socials__icon {
   margin-right: 17px;
+  cursor: pointer;
 }
 .socials__icon:hover {
   color: #5474fd;

@@ -69,6 +69,10 @@ body {
         &:last-child {
             margin-right: 0;
         }
+        &:hover {
+            transform: scale(1.1);
+            transition: $transitionAnimation;
+        }
     }
     &__link {
         font-family: $secondaryFont;
@@ -87,7 +91,7 @@ body {
 .banner {
     position: relative;
     padding: 264px 0 144px;
-    background-image: url(/img/banner/Banner-bg.jpg);
+    background-image: url(../img/banner/Banner-bg.jpg);
     @include bgImageStyle;
     text-align: center;
     &__title {
@@ -167,7 +171,7 @@ body {
 .choose-us {
     width: 100%;
     padding: 212px 0 131px;
-    background-image: url(/img/choose-us/choose-us-bg.jpg);
+    background-image: url(../img/choose-us/choose-us-bg.jpg);
     @include bgImageStyle;
     &__container {
         position: relative;
@@ -223,7 +227,7 @@ body {
     }
     &__arcs {
         position: absolute;
-        width: 100%;
+        // width: 100%;
         top: -60px;
         z-index: -1;
         left: calc(50% - 390px);
@@ -236,10 +240,10 @@ body {
         height: 700px;
         @include bgImageStyle;
         &--top {
-            background-image: url(/img/spain/section-top-bg.jpg);
+            background-image: url(../img/spain/section-top-bg.jpg);
         }
         &--bottom {
-            background-image: url(/img/spain/section-bottom-bg.jpg);
+            background-image: url(../img/spain/section-bottom-bg.jpg);
         }
     }
     &__content {
@@ -281,7 +285,7 @@ body {
 }
 
 .testimonials {
-    background-image: url(/img/testimonials/testimonials-bg.jpg);
+    background-image: url(../img/testimonials/testimonials-bg.jpg);
     @include bgImageStyle;
     padding: 128px 0 199px;
     &__container {
@@ -338,6 +342,7 @@ body {
 .socials {
     &__icon {
         margin-right: 17px;
+        cursor: pointer;
         &:hover {
             color: $secondaryColor;
         }
