@@ -299,14 +299,13 @@ body {
         margin-bottom: 91px;
     }
     &__img {
-        width: 40%;
-        display: inline-block;
+        // display: inline-block;
+       width: 40%;
     }
     &__content {
-        width: 60%;
+        max-width: 60%;
         background-color: $bgDarkColor;
         padding: 49px 25px 39px 62px;
-        display: inline-block;
     }
     &__author {
         @include fontStyle(20px, 400);

@@ -376,13 +376,11 @@ body {
 }
 .testimonials__img {
   width: 40%;
-  display: inline-block;
 }
 .testimonials__content {
-  width: 60%;
+  max-width: 60%;
   background-color: #333333;
   padding: 49px 25px 39px 62px;
-  display: inline-block;
 }
 .testimonials__author {
   font-size: 20px;
@@ -485,21 +483,19 @@ body {
   .menu {
     display: none;
   }
-  .choose-us {
-    padding: 75px 0 50px;
+  .choose-us__img {
+    display: none;
+  }
+  .choose-us__title {
+    display: inline-block;
+    margin: 0 auto 30px;
+  }
+  .choose-us__description {
+    width: 100%;
   }
   .choose-us__button {
-    margin-top: 30px;
-  }
-  .choose-us__img {
-    width: 250px;
-  }
-  .choose-us__img--top {
-    top: -15px;
-  }
-  .choose-us__img--bottom {
-    bottom: 20px;
-    right: 55px;
+    display: inline-block;
+    margin: 30px auto 0;
   }
   .burger {
     width: 30px;
@@ -567,5 +563,74 @@ body {
     top: 50%;
     transform: rotateZ(-45deg);
     background-color: #ffffff;
+  }
+  .form {
+    width: 530px;
+  }
+  .form__button {
+    padding: 17px 55px;
+  }
+  .spain__wrapper {
+    height: 550px;
+  }
+  .spain__content--top {
+    top: 100px;
+    left: calc(50% - 270px);
+  }
+  .spain__content--bottom {
+    bottom: 100px;
+    right: calc(50% - 270px);
+  }
+  .testimonials__img {
+    display: none;
+  }
+  .testimonials__wrapper {
+    width: 100%;
+  }
+  .testimonials__content {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .button {
+    padding: 19px 30px;
+  }
+  .form {
+    width: 400px;
+  }
+  .form__input::-moz-placeholder {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .form__input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .form__button {
+    padding: 10px 10px;
+  }
+  .how-works__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .how-works__item {
+    margin-bottom: 60px;
+  }
+  .how-works__item:last-child {
+    margin-bottom: 0;
+  }
+  .how-works__img {
+    margin-bottom: 20px;
+  }
+  .spain__content {
+    max-width: 414px;
+  }
+  .spain__content--top {
+    top: 100px;
+    left: calc(50% - 215px);
+  }
+  .spain__content--bottom {
+    bottom: 100px;
+    right: calc(50% - 215px);
   }
 }/*# sourceMappingURL=style.css.map */
