@@ -49,6 +49,17 @@ table {
   border-spacing: 0;
 }
 
+@keyframes moveChevron {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 body {
   font-family: "Josefin Sans", sans-serif;
   color: #ffffff;
@@ -183,17 +194,6 @@ body {
   animation: moveChevron 2s infinite alternate;
 }
 
-@keyframes moveChevron {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-7px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .form {
   display: flex;
   align-items: center;
@@ -302,6 +302,12 @@ body {
   z-index: -1;
   left: calc(50% - 390px);
 }
+.how-works__item {
+  transition: all 0.4s ease;
+}
+.how-works__item:hover {
+  transform: scale(1.05);
+}
 
 .spain {
   position: relative;
@@ -370,6 +376,10 @@ body {
 }
 .testimonials__wrapper {
   display: flex;
+}
+.testimonials__wrapper:hover {
+  box-shadow: 2px 2px 10px #5474fd;
+  transition: all 0.4s ease;
 }
 .testimonials__title {
   margin-bottom: 91px;

@@ -1,6 +1,7 @@
 @import "_reset";
 @import "_mixins";
 @import "_variables";
+@import "_keyframes";
 @import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 body {
@@ -124,18 +125,6 @@ body {
     }
 }
 
-@keyframes moveChevron {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-7px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
 .form {
     display: flex;
     align-items: center;
@@ -211,6 +200,7 @@ body {
     background-color: $bgDarkColor;
     padding: 100px 0;
     position: relative;
+    // transition: transform 1s ease-in-out;
     &__container {
         display: flex;
         justify-content: space-around;
@@ -227,10 +217,16 @@ body {
     }
     &__arcs {
         position: absolute;
-        // width: 100%;
         top: -60px;
         z-index: -1;
         left: calc(50% - 390px);
+    }
+    &__item {
+        transition: $transitionAnimation;
+        &:hover {
+            transform: scale(1.05);
+            // transition: $transitionAnimation;
+        }
     }
 }
 
@@ -294,12 +290,15 @@ body {
     }
     &__wrapper {
         display: flex;
+        &:hover {
+            box-shadow: 2px 2px 10px $secondaryColor;
+            transition: $transitionAnimation;
+        }
     }
     &__title {
         margin-bottom: 91px;
     }
     &__img {
-        // display: inline-block;
        width: 40%;
     }
     &__content {
